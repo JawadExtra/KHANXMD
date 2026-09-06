@@ -100,9 +100,13 @@ export default {
 
   // ===== BOT BEHAVIOR & APPEARANCE =====
   DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX*",
+  AUTO_VIEW_STATUS: process.env.AUTO_VIEW_STATUS || "true",
   AUTO_LIKE_STATUS: process.env.AUTO_LIKE_STATUS || "false",
   AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
   AUTO_BIO: process.env.AUTO_BIO || "false",
+  AUTO_LIKE_EMOJI: process.env.AUTO_LIKE_EMOJI 
+    ? process.env.AUTO_LIKE_EMOJI.split(',').map(e => e.trim()) 
+    : ["❤️", "🔥", "👍", "😍", "💀"],
   
   // ===== WELCOME & GOODBYE SETTINGS =====
   WELCOME: process.env.WELCOME || "false",
