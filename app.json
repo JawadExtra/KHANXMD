@@ -121,10 +121,20 @@
       "required": false,
       "value": "*📞 Call not allowed in this number you don't have permission 📵*"
     },
-    "AUTO_STATUS_SEEN": {
-      "description": "Auto view status: true/false (Default: true)",
+    "AUTO_VIEW_STATUS": {
+      "description": "Auto view status messages: true/false (Default: true)",
       "required": false,
       "value": "true"
+    },
+    "AUTO_LIKE_STATUS": {
+      "description": "Auto like status messages: true/false (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_LIKE_EMOJI": {
+      "description": "Emojis for auto like status (comma-separated, Default: ❤️,🔥,👍,😍,💀)",
+      "required": false,
+      "value": "❤️,🔥,👍,😍,💀"
     },
     "REACT_EMOJIS": {
       "description": "Reaction emojis (comma-separated)",
